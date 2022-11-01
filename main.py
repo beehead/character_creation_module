@@ -85,7 +85,7 @@ def choice_char_class(char_name: str) -> Character:
     return char_class
 
 
-def start_training(character):
+def start_training(character: Character) -> str:
     """
     Принимает на вход имя и класс персонажа.
     Возвращает сообщения о результатах цикла тренировки персонажа.
@@ -119,7 +119,8 @@ def start_training(character):
 
 def main() -> None:
     """Main function"""
-    warrior = Warrior('Кодослав')
+#    warrior = Warrior('Кодослав')
+    warrior = choice_char_class('Кодослав')
     print(warrior)
     print(warrior.attack())
     start_training(warrior)
